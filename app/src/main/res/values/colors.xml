@@ -10,5 +10,6 @@
     <color name="main_wg_color">#F6F6F6</color>
     <color name="aside">#EAEAEA</color>
     <color name="logo_color">#EC6D6D</color>
+    <color name="telegrambg">#95C6F1</color>
 
 </resources>

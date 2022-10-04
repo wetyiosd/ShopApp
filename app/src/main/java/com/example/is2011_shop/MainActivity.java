@@ -77,6 +77,16 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void openAboutUs(View view) {
+        Intent intent = new Intent(this, AboutUsPage.class);
+        startActivity(intent);
+    }
+
+    public void contactOpen(View view) {
+        Intent intent = new Intent(this, contactPage.class);
+        startActivity(intent);
+    }
+
     public void allCategories(View view) {
         courseList.clear();
         courseList.addAll(fullCourseList);
