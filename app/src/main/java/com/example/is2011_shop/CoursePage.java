@@ -3,6 +3,7 @@ package com.example.is2011_shop;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
@@ -38,5 +39,15 @@ public class CoursePage extends AppCompatActivity {
         int item_id = getIntent().getIntExtra("courseId", 0);
         Order.items_id.add(item_id);
         Toast.makeText(this, "Добавлено!", Toast.LENGTH_LONG).show();
+    }
+
+    public void openAboutUs(View view) {
+        Intent intent = new Intent(this, AboutUsPage.class);
+        startActivity(intent);
+    }
+
+    public void contactOpen(View view) {
+        Intent intent = new Intent(this, contactPage.class);
+        startActivity(intent);
     }
 }

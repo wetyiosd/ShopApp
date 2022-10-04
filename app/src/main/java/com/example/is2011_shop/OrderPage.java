@@ -2,7 +2,9 @@ package com.example.is2011_shop;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -30,5 +32,19 @@ public class OrderPage extends AppCompatActivity {
         }
 
         orders_list.setAdapter(new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, coursesTitle));
+    }
+
+    public void openAboutUs(View view) {
+        Intent intent = new Intent(this, AboutUsPage.class);
+        startActivity(intent);
+    }
+
+    public void contactOpen(View view) {
+        Intent intent = new Intent(this, contactPage.class);
+        startActivity(intent);
+    }
+    public void mainOpen(View view) {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 }
